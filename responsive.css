@@ -1,0 +1,136 @@
+@media(max-width:767px){
+    /* humburg */
+  .nav-bar-list {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100vh;
+    background: #222;
+    padding: 60px 20px;
+    transition: right 0.3s ease;
+
+   
+  }
+
+  .nav-bar-list.active {
+    right: 0;
+  }
+  .nav-bar-list li a{
+      color: white;
+      cursor: pointer;
+  }
+  .nav-bar-list li a:hover{
+   text-decoration: solid underline #f6f0f0;
+   text-decoration-thickness: 2px;
+   text-decoration-line: underline;
+   text-underline-offset: 6px;
+}
+
+  .hamburger {
+    display: block;
+  }
+   .close-btn {
+    display: block;
+  }
+
+
+  .hero{
+    display: flex;
+    grid-template-columns: repeat(2,1fr);
+    padding: 40px;
+    column-gap: 40px;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.project-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+
+  flex-direction: column;
+   row-gap: 30px;
+}
+.project-card{
+
+    width: 300px;
+    height: 280px;
+    border: 1px solid rgb(163, 157, 157);
+    border-radius: 6px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: white;
+    box-shadow: 1px 1px 1px gray;
+    position: relative;
+
+}
+.project-button{
+    display: flex;
+    flex-wrap: wrap;
+   /* flex-direction: column; */
+    
+    gap: 5px;
+    margin:5px 5px ;
+     margin-top: 5px;
+    margin-bottom: 5px;
+    position: absolute;
+    bottom: 10px;
+ 
+   
+    
+}
+.project-card p{
+    font-size: 12px;
+    margin-top: 6px;
+    text-align: justify;
+}
+/* Tablet - 2 columns */
+ .footer-column {
+    flex: 1 1 45%;
+  }
+
+
+}
+/* Media query for mobile screens */
+
+@media (max-width: 480px) {
+  .icon-container {
+    width: calc(50% - 1rem); /* 2 icons per row with gap */
+  }
+  
+}
+
+/* Mobile - 1 column */
+@media (max-width: 576px) {
+  .footer-column {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .footer-column ul {
+    padding-left: 0;
+  }
+
+  .footer-column pre {
+    white-space: pre-wrap;
+    text-align: center;
+  }
+}
+/*  new btn */
+@media screen and (max-width: 600px) {
+  .download-btn {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+  .resume-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+
+

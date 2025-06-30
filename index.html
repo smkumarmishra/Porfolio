@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+
+<body>
+  <div class="bg-container" id="bgContainer">
+
+    <header class="header-start">
+      <div id="topAlert" class="top-alert">
+          <p id="topAlertMsg" class="alertMsg"> !! Welcome to My Portfolio !! </p>
+        <span id="closeAlert" class="close-btn-alert"> &times;</span>
+      </div>
+
+      <h2 class="logo"><span>P</span>ortfolio</h2>
+
+
+      <nav class="nav-bar">
+        <div class="hamburger" id="hamburger">☰</div>
+        <ul class="nav-bar-list" id="navMenu">
+
+          <span class="close-btn" id="closeBtn">&times;</span> <!-- Button -->
+
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#project">project</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- hero section -->
+      <section class="hero" id="home">
+        <div class="hero-section-text">
+          <h2>saurbh Mishra</h2>
+          <p>I am UI Full stack </p> <br>
+          <!-- <span class="hero-span-text">"Web developer"</span> -->
+           <span class="hero-span-text" id="animated-text"></span>
+
+        </div>
+        <div class="hero-section-image"><img
+            src="https://img.freepik.com/premium-photo/young-man-isolated-blue_1368-124991.jpg?semt=ais_hybrid&w=740"
+            alt="image" id="images"></div>
+      </section>
+      <!-- about section -->
+      <section class="about-section" id="about">
+        <h3 class="heading-text">About me</h3>
+        <p class="about-para-text"> Hello! I'm a passionate <strong>Full Stack Web Developer</strong> currently
+          undergoing professional training in modern web technologies.
+          I hold a Bachelor's degree in Computer Applications (BCA) and have a strong foundation in programming and
+          problem-solving.</p>
+        <p class="about-para-text">
+          I specialize in building responsive, user-friendly websites using <strong>HTML, CSS, JavaScript</strong>, and
+          modern tools like <strong>React, Node.js, and MongoDB</strong>.
+          I love learning new things and continuously improving my skills to become an industry-ready developer.
+        </p>
+      </section>
+
+      <!-- project  section----------------->
+      <section class="project" id="project">
+        <h2 class="heading-text">Projects</h2>
+        <div class="project-container">
+
+          <div class="project-card ecom">
+            <h3>E-commerce</h3>
+            <h5 class="Aboutproj">About of project</h5>
+            <p>:MyShop is a fully responsive, user-friendly e-commerce website designed using pure HTML,
+              CSS, and JavaScript. This project provides the core functionalities of an online shopping platform,
+              including
+              product display, cart management, and user authentication using browser LocalStorage.</p>
+            <div class="project-button">
+              <button class="btn1"
+                onclick="window.location.href='//684711f509c2e32ac3087875--curious-conkies-1147ea.netlify.app/'">View
+                demo</button>
+              <button class="btn2"
+                onclick="window.location.href='//github.com/smkumarmishra/E-Commerce_Project'">Github</button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="project-card weather">
+            <h3>Weather</h3>
+            <h5 class="Aboutproj">About of project</h5>
+            <p>:- This Weather App is a fully functional web-based application designed to provide real-time weather
+              updates. Built using HTML, CSS, JavaScript, and an external Weather API, the app allows users to enter a
+              city name and receive details like temperature, humidity,
+            </p>
+            <div class="project-button">
+              <button class="btn1" onclick="window.location.href='//smkumarmishra.github.io/Weather-Report/'">View
+                demo</button>
+              <button class="btn2"
+                onclick="window.location.href='//github.com/smkumarmishra/Weather-Report'">Github</button>
+            </div>
+          </div>
+          <!--  -->
+
+          <div class="project-card stopwatch">
+            <h3>StopWatch</h3>
+            <h5 class="Aboutproj">About of project</h5>
+            <p>:- This is a fully responsive stopwatch designed using HTML, CSS, and JavaScript. It allows users to
+              start, stop, reset, and track elapsed time seamlessly.
+            </p>
+            <div class="project-button">
+              <button class="btn1" onclick="window.location.href='//smkumarmishra.github.io/stopWatch/'">View
+                demo</button>
+              <button class="btn2"
+                oncclic="window.location.href='//github.com/smkumarmishra/Weather-Report'">Github</button>
+            </div>
+          </div>
+
+          <!--  -->
+
+          <div class="project-card dice-rolls">
+            <h3>Dice Roll</h3>
+            <h5 class="Aboutproj">About of project</h5>
+            <p>:- A Dice Roll project using HTML, CSS, and JavaScript is a simple interactive web application that
+              simulates rolling a dice.
+              This project helps beginners understand DOM manipulation, event handling, and random number generation.
+              Let me know if you need more details!
+            </p>
+            <div class="project-button">
+              <button class="btn1" onclick="window.location.href='//smkumarmishra.github.io/dice-roll-/'">View
+                demo</button>
+              <button class="btn2"
+                onclick="window.location.href='//github.com/smkumarmishra/dice-roll-'">Github</button>
+            </div>
+          </div>
+
+
+          <!--  -->
+
+          <div class="project-card bmi-cal">
+            <h3>BMI-Calculator</h3>
+            <h5 class="Aboutproj">About of project</h5>
+            <p>:- A BMI (Body Mass Index) calculator is a tool used to determine a person's body mass index based on
+              their weight and height. The BMI is a numerical value that helps assess whether an individual has a
+              healthy weight for their height. It is calculated using the formula:
+              BMI = weight (kg) / height² (m²)
+            </p>
+            <div class="project-button">
+              <button class="btn1" onclick="window.location.href='//smkumarmishra.github.io/BMI-calculator/'">View
+                demo</button>
+              <button class="btn2"
+                onclick="window.location.href='//github.com/smkumarmishra/BMI-calculator'">Github</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- skill section -->
+      <section class="skills" id="skills">
+        <h2 class="heading-text">Skills</h2>
+        <div class="skill-container">
+          <div class="icon-container">
+            <i class="fa-brands fa-html5 fa-beat-fade fa-6x" style="color: #d80e65;"></i>
+            <p>HTML5</p>
+          </div>
+          <div class="icon-container">
+            <i class="fa-brands fa-css3 fa-beat-fade fa-6x" style="color: #7247f6;"></i>
+            <p>css3</p>
+          </div>
+          <div class="icon-container">
+            <i class="fa-brands fa-js fa-beat fa-6x" style="color: #FFD43B;"></i>
+            <p>js</p>
+          </div>
+          <div class="icon-container">
+            <i class="fa-brands fa-react fa-beat-fade fa-6x" style="color: #4306fb;"></i>
+            <p>react</p>
+          </div>
+
+          <div class="icon-container">
+            <i class="fa-brands fa-node-js fa-fade fa-6x" style="color: #0bfab2;"></i>
+            <p>node.js</p>
+          </div>
+          <div class="icon-container">
+            <i class="fa-solid fa-leaf fa-beat fa-6x" style="color: #2af81b;"></i>
+            <p>MangoDB</p>
+          </div>
+
+
+        </div>
+      </section>
+         <!-- button section -->
+       <section>
+         <div class="resume-section">
+           <a href="saurbh_CV.pdf" download class="download-btn">Download Resume</a>
+           <a href="saurbh_CV.pdf" target="_blank" class="download-btn">View Resume</a>
+
+        </div>
+       </section>
+
+      <!-- contact area -->
+      <section class="contact" id="contact">
+        <h3 class="heading-text">Hire Me</h3>
+        <div class="contact-section">
+          <form id="form">
+            <div class="form-row">
+              <input type="text" name="user_name" placeholder="Your Name" required />
+              <input type="email" name="user_email" placeholder="Your Email" required />
+              <input type="tel" name="user_phone" placeholder="Your Phone" pattern="[0-9]{10}" required />
+            </div>
+
+
+            <div class="textarea-wrapper">
+              <textarea name="message" id="messageBox" rows="6" maxlength="1000" placeholder="Write your message..."
+                class="msgbox" required></textarea>
+              <div class="char-count" id="charCount">1000</div>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Portfolio</h3>
+          <p>Get in Touch</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#project">project</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <p>Email: support@myshop.com</p>
+          <p>Phone: +91-9876543210</p>
+          <p>Whatsapp: +91 7362052372</p>
+          <pre>Location: Apna Bihar,Aurangabad City, 
+                Newtown,Karma,824102,
+                Bihar, India</pre>
+        </div>
+
+        <div class="footer-column">
+          <h4>Follow Us</h4>
+          <ul class="social-icons">
+            <li> <a href="#"><i class="fa-brands fa-facebook-f fa-beat"></i> Facebook.com</a></li>
+            <li> <a href=""><i class="fa-brands fa-instagram fa-beat"></i> Instagram.com</a></li>
+            <li> <a href=""><i class="fa-brands fa-square-youtube fa-beat"></i> Youtube.com</a></li>
+            <li> <a
+                href="https://www.linkedin.com/in/saurbh-mishra?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                  class="fa-brands fa-linkedin-in fa-beat"></i> Linkedin.com</a></li>
+            <li> <a href=""><i class="fa-brands fa-whatsapp fa-beat"></i> Whatsapp.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Portfolio & saurbh.com .All rights reserved.</p>
+      </div>
+      <marquee behavior="scroll" direction="left">This project in the progress, in future i will update..</marquee>
+    </footer>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
